@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoList</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h2> To-Do List</h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Type your todo list">
+                <!-- <i class="bi bi-list-task"></i> -->
+                
+                <button onclick="addTask()">Add</button>
+            </div>
+            <!-- complete and Clear task -->
+            <ul class="task">
+                <ul class="complete">
+                    
+                    <li> <i class="fa-solid fa-check-double"></i>  Complete all tasks</li>
+                </ul>
+                <ul class="completed">
+                    <li>Clear completed</li>
+                </ul>
+            </ul>
+
+            <ul id="list-container"></ul>
+            
+            <div class="filter">
+                <ul class="footer-last">
+                    <li class="task-count" id="task-count">0 tasks left</li>
+                </ul>
+                    <ul class="footer-s">
+                        <li class="footer">All</li>
+                        <li class="footer">Completed</li>
+                        <li class="footer">Uncompleted</li>
+                    </ul>
+                
+                <!-- <p>All</p>
+                <p>Completed</p>
+                <p>Uncompleted</p> -->
+                <!-- <button onclick="showAll()">All</button>
+                <button onclick="showActive()">Completed</button>
+                <button onclick="showCompleted()">Completed</button> -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
